@@ -2,30 +2,6 @@
 <h1 align="center"> <img src="./imgs/icon/ai.png" width="30" /><a href="https://liyongjian2023.github.io/RoboArxiv/">RoboArxiv</a></h1>
 </p>
 
-<p align="center">
-  	<a href="https://img.shields.io/badge/version-v0.1.0-blue">
-      <img alt="version" src="https://img.shields.io/badge/version-v0.1.0-blue?color=FF8000?color=009922" />
-    </a>
-  <a >
-       <img alt="Status-building" src="https://img.shields.io/badge/Status-building-blue" />
-  	</a>
-  <a >
-       <img alt="PRs-Welcome" src="https://img.shields.io/badge/PRs-Welcome-red" />
-  	</a>
-   	<a href="https://github.com/qiaozhijian/RoboArxiv/stargazers">
-       <img alt="stars" src="https://img.shields.io/github/stars/qiaozhijian/RoboArxiv" />
-  	</a>
-  	<a href="https://github.com/qiaozhijian/RoboArxiv/network/members">
-       <img alt="FORK" src="https://img.shields.io/github/forks/qiaozhijian/RoboArxiv?color=FF8000" />
-  	</a>
-    <a href="https://github.com/qiaozhijian/RoboArxiv/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/qiaozhijian/RoboArxiv?color=0088ff"/>
-    </a>
-    <br />
-</p>
-
-
----
 
 ## <img src="./imgs/icon/motivation.png" width="25" />Introduction
 
