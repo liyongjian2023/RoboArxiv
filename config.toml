@@ -3,7 +3,7 @@ limit_days = 7
 cache_url = "https://liyongjian2023.github.io/RoboArxiv/cache.json"
 
 [[sources]]
-limit = 150
+limit = 300
 category = "cs.RO"
 title = "Robotics"
 
