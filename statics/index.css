@@ -66,6 +66,15 @@
 
     --footer-color: var(--nord04);
     --footer-link-hover-color: var(--nord0D);
+
+    --day-read-status-read-color: var(--nord0E);
+    --day-read-status-read-bg: rgba(163, 190, 140, 0.2);
+    --day-read-status-unread-color: var(--nord09);
+    --day-read-status-unread-bg: rgba(129, 161, 193, 0.2);
+    --day-read-button-color: var(--nord06);
+    --day-read-button-border: var(--nord03);
+    --day-read-button-hover-bg: var(--nord02);
+    --day-read-button-hover-border: var(--nord0D);
 }
 
 [data-theme="light"] {
@@ -138,6 +147,15 @@
 
     --footer-color: var(--color-text);
     --footer-link-hover-color: var(--color-hover);
+
+    --day-read-status-read-color: var(--color-success);
+    --day-read-status-read-bg: rgba(163, 190, 140, 0.18);
+    --day-read-status-unread-color: var(--color-info);
+    --day-read-status-unread-bg: rgba(136, 192, 208, 0.25);
+    --day-read-button-color: var(--color-text);
+    --day-read-button-border: var(--color-primary-h);
+    --day-read-button-hover-bg: rgba(129, 161, 193, 0.12);
+    --day-read-button-hover-border: var(--color-success);
 }
 
 html {
@@ -201,6 +219,60 @@ body {
     font-weight: 700;
     margin: 0;
     color: var(--date);
+}
+
+.date-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.day-read-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.day-read-status {
+    font-size: var(--font-size-s);
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 0.2rem 0.8rem;
+    border-radius: 999px;
+}
+
+.day-read-status-read {
+    color: var(--day-read-status-read-color);
+    background: var(--day-read-status-read-bg);
+}
+
+.day-read-status-unread {
+    color: var(--day-read-status-unread-color);
+    background: var(--day-read-status-unread-bg);
+}
+
+.day-read-toggle {
+    font-family: inherit;
+    font-size: var(--font-size-s);
+    color: var(--day-read-button-color);
+    background: transparent;
+    border: 1px solid var(--day-read-button-border);
+    border-radius: 999px;
+    padding: 0.2rem 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.day-read-toggle:hover {
+    background: var(--day-read-button-hover-bg);
+    border-color: var(--day-read-button-hover-border);
+}
+
+.day-read-toggle:focus-visible {
+    outline: 2px solid var(--day-read-button-hover-border);
+    outline-offset: 2px;
 }
 
 p {
@@ -352,4 +424,10 @@ footer {
     display: inline-flex;
     padding: .2rem .4rem;
     vertical-align: middle;
+}
+
+@media (max-width: 640px) {
+    .day-read-controls {
+        width: 100%;
+    }
 }

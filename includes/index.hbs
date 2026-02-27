@@ -67,9 +67,17 @@
 </section>
 
 {{#each days}}
-    <section class="day-container">
-        <div class="date">
-            <time datetime="{{datetime}}">{{time_format datetime "%F"}}</time>
+    <section class="day-container" data-day="{{time_format datetime "%F"}}">
+        <div class="date-row">
+            <div class="date">
+                <time datetime="{{datetime}}">{{time_format datetime "%F"}}</time>
+            </div>
+            <div class="day-read-controls">
+                <span class="day-read-status day-read-status-unread" data-role="day-read-status">未看</span>
+                <button class="day-read-toggle" data-role="day-read-toggle" type="button" aria-pressed="false">
+                    标记已看
+                </button>
+            </div>
         </div>
         {{#each subjects}}
             <article>
