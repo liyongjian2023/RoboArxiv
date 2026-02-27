@@ -147,4 +147,29 @@ function initReadDayTracking() {
     });
 }
 
+function initCtrlClickOpenArxiv() {
+    const titleNodes = document.querySelectorAll(".article-expander-title[data-arxiv-url]");
+    if (!titleNodes.length) {
+        return;
+    }
+
+    titleNodes.forEach((titleNode) => {
+        titleNode.addEventListener("click", (event) => {
+            if (!event.ctrlKey && !event.metaKey) {
+                return;
+            }
+
+            const arxivUrl = titleNode.getAttribute("data-arxiv-url");
+            if (!arxivUrl) {
+                return;
+            }
+
+            event.preventDefault();
+            event.stopPropagation();
+            window.open(arxivUrl, "_blank", "noopener");
+        });
+    });
+}
+
+initCtrlClickOpenArxiv();
 initReadDayTracking();
